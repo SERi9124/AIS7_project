@@ -3,7 +3,7 @@
 **🦁Likelion AI SCHOOL7 🔥 6조 핫식스 팀**               
 교통사고의 원인을 분석하는 것이 목표이다.                   
 
-<img src="https://img.shields.io/badge/streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=A8B9CC"/> : https://meji9086-traffic-accident-data-analysis-1-j6stsu.streamlitapp.com/         
+<img src="https://img.shields.io/badge/streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=A8B9CC"/> : https://traffic-accident.streamlit.app/         
 
 ## 🗃 Data Info.                                       
 도로교통공단 TAAS : [http://taas.koroad.or.kr/sta/acs/exs/typical.do?menuId=WEB_KMP_OVT_UAS_ASA#](http://taas.koroad.or.kr/sta/acs/exs/typical.do?menuId=WEB_KMP_OVT_UAS_ASA#)               
