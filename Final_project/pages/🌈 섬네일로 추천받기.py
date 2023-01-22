@@ -19,7 +19,7 @@ st.title("💘 섬네일로 확인하는 내 취향")
 st.write("")
 st.write("")
 
-web_title = pd.read_csv('https://ais7.s3.ap-northeast-2.amazonaws.com/toon_list.csv')
+web_title = pd.read_csv('data/toon_list.csv')
 
 @st.cache
 def load_thumb(url):
@@ -29,16 +29,16 @@ def load_thumb(url):
     
     return rep_thumb
 
-thumb_url = 'https://ais7.s3.ap-northeast-2.amazonaws.com/cropped_img.npy'
+thumb_url = 'https://github.com/SERi9124/YCTI_streamlit/blob/4dcccfd048e6971afb4878906456dd3528a3b719/data/cropped_img.npy?raw=true'
 rep_thumb = load_thumb(thumb_url)
 # st.write(web_title.iloc[0].values[0])
 
-data_name = 'https://ais7.s3.ap-northeast-2.amazonaws.com/np_embeddings_efficientnet_v2.npy'
+data_name = 'https://github.com/SERi9124/YCTI_streamlit/blob/4dcccfd048e6971afb4878906456dd3528a3b719/data/np_embeddings_efficientnet_v2.npy?raw=true'
 # data_name = requests.get('https://github.com/SERi9124/YCTI_streamlit/blob/4dcccfd048e6971afb4878906456dd3528a3b719/data/np_embeddings_efficientnet_v2.npy?raw=true')
 # data_name.raise_for_status()
 # data_name = np.load(io.BytesIO(data_name.content))
 
-label_name = 'https://ais7.s3.ap-northeast-2.amazonaws.com/np_labels_efficientnet_v2.npy'
+label_name = 'https://github.com/SERi9124/YCTI_streamlit/blob/4dcccfd048e6971afb4878906456dd3528a3b719/data/np_labels_efficientnet_v2.npy?raw=true'
 # label_name = requests.get('https://github.com/SERi9124/YCTI_streamlit/blob/4dcccfd048e6971afb4878906456dd3528a3b719/data/np_labels_efficientnet_v2.npy?raw=true')
 # label_name.raise_for_status()
 # label_name = np.load(io.BytesIO(label_name.content))
@@ -111,8 +111,8 @@ def rank_similarity(embedding, labels, webtoon_ids, top = 10):
 
 def show_recommendations(df, webtoon_ids, rep_thumb):
     
-    toon_list = pd.read_csv("https://ais7.s3.ap-northeast-2.amazonaws.com/toon_list.csv").T
-    webtoon = pd.read_csv("https://ais7.s3.ap-northeast-2.amazonaws.com/webtoon.csv")
+    toon_list = pd.read_csv("data/toon_list.csv").T
+    webtoon = pd.read_csv("data/webtoon.csv")
 
     wt_name = []
     wt_titleId = []
