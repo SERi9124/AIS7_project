@@ -1,4 +1,6 @@
-# You Can Toon it ! 📔📕📗
+# 💁🏻‍♀️ Webtoon Recommend 🙋🏻‍♀️
+🦁 Likelion AI SCHOOL7_ 파이널조 YCTI 팀 <br>
+유저가 선택한 웹툰의 그림체를 기반으로 <b>비슷한 그림체의 웹툰을 추천</b>하는것이 목표이다. <br>
 
 <img src="https://img.shields.io/badge/streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=A8B9CC"/>    https://you-can-toon-it.streamlit.app/      
 
